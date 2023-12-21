@@ -149,9 +149,7 @@ export default function Page() {
               onChange={() => handleCompleteTodo(todo)}
               className="mt-2"
             />
-            <label htmlFor={`todo-${todo.id}`} className="truncate">
-              {todo.title}
-            </label>
+            <label htmlFor={`todo-${todo.id}`}>{todo.title}</label>
             <button
               aria-label={`delete ${todo.title}`}
               onClick={() => handleDeleteTodo(todo.id)}
